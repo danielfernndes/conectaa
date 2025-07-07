@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coneccta Social</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    :root {
+      --roxo: #6a1b9a;
+      --laranja: #ff7043;
+      --bege: #fff3e0;
+      --branco: #ffffff;
+      --cinza: #f5f5f5;
+      --preto: #212121;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--cinza);
+      color: var(--preto);
+      line-height: 1.6;
+    }
+
+    @keyframes fadeIn {
+      0% {opacity: 0; transform: translateY(-20px);}
+      100% {opacity: 1; transform: translateY(0);}
+    }
+
+    header {
+      position: relative;
+      color: white;
+      text-align: center;
+      height: 450px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: url('_DSC1244.JPG') no-repeat center center/cover;
+    }
+
+    header::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(106, 27, 154, 0.7);
+      z-index: 0;
+    }
+
+    header img {
+      position: relative;
+      z-index: 1;
+      max-width: 160px;
+      margin-bottom: 1rem;
+    }
+
+    header h1,
+    header p {
+      position: relative;
+      z-index: 1;
+      animation: fadeIn 1s ease-out;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      background: var(--bege);
+      padding: 1.2rem 0;
+      font-weight: 500;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    nav a {
+      color: var(--roxo);
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: var(--laranja);
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1.5rem;
+      color: var(--roxo);
+    }
+
+    .card {
+      background: var(--branco);
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+      margin-bottom: 2.5rem;
+      transition: transform 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .gallery a img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 12px;
+      box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .btn {
+      display: inline-block;
+      background: linear-gradient(45deg, var(--roxo), var(--laranja));
+      background-size: 200% auto;
+      color: white;
+      padding: 1rem 2rem;
+      border-radius: 30px;
+      text-decoration: none;
+      margin-top: 1rem;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background-position: right center;
+      text-decoration: none;
+    }
+
+    footer {
+      background: var(--roxo);
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
+      font-size: 0.9rem;
+    }
+
+    footer i {
+      font-size: 1.5rem;
+      margin: 0 0.5rem;
+      color: white;
+      transition: color 0.3s;
+    }
+
+    footer i:hover {
+      color: var(--laranja);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="CONEECTA.jpeg" alt="Logo Coneccta Social">
+    <h1>Coneccta Social</h1>
+    <p>Jiu-Jitsu, Leitura e o Poder da Transformação</p>
+  </header>
+
+  <nav>
+    <a href="#projeto">Projeto</a>
+    <a href="#galeria">Galeria</a>
+    <a href="#doacao">Doação</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <section id="projeto">
+    <div class="card">
+      <h2>Sobre o Projeto</h2>
+      <p>O Coneccta Social une esporte e cultura para transformar vidas. Oferecemos aulas gratuitas de Jiu-Jitsu e acesso à leitura para crianças em situação de vulnerabilidade. Acreditamos na disciplina, no afeto e no conhecimento como pontes para um futuro melhor.</p>
+    </div>
+  </section>
+
+  <section id="galeria">
+    <h2>Galeria</h2>
+    <div class="gallery">
+      <a href="_DSC0862.JPG" target="_blank"><img src="_DSC0862.JPG" alt="Aula de leitura"></a>
+      <a href="_DSC0827.JPG" target="_blank"><img src="_DSC0827.JPG" alt="Integração dos alunos"></a>
+      <a href="_DSC1219.JPG" target="_blank"><img src="_DSC1219.JPG" alt="Jiu-Jitsu em ação"></a>
+      <a href="_DSC0899.JPG" target="_blank"><img src="_DSC0899.JPG" alt="Voluntárias atuando"></a>
+      <a href="_DSC0999.JPG" target="_blank"><img src="_DSC0999.JPG" alt="Leitura coletiva"></a>
+      <a href="_DSC1050.JPG" target="_blank"><img src="_DSC1050.JPG" alt="Apresentação cultural"></a>
+    </div>
+  </section>
+
+  <section id="doacao">
+    <div class="card">
+      <h2>Contribua</h2>
+      <p>Ajude-nos a continuar espalhando educação, empatia e esporte. Toda contribuição é importante!</p>
+      <p><strong>PIX:</strong> coneccta.social@email.com</p>
+      <a href="https://mpago.la/seu-link-pix" class="btn" target="_blank">Quero Doar</a>
+    </div>
+  </section>
+
+  <section id="contato">
+    <div class="card">
+      <h2>Contato</h2>
+      <p>
+        Localização: Guarabira/PB<br>
+        E-mail: coneccta.social@email.com<br>
+        Instagram: <a href="https://instagram.com/conecctasocial" target="_blank">@conecctasocial</a>
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    <p>Siga-nos:</p>
+    <a href="https://instagram.com/conecctasocial" target="_blank"><i class="fab fa-instagram"></i></a>
+    <p>&copy; 2025 Coneccta Social. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
