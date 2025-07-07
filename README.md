@@ -1,1 +1,12 @@
+📁 conectaa/
+├── index.html
+├── CONEECTA.jpeg
+├── _DSC1244.JPG
+├── _DSC0862.JPG
+├── _DSC0827.JPG
+├── _DSC1219.JPG
+├── _DSC0899.JPG
+├── _DSC0999.JPG
+├── _DSC1050.JPG
+└── .nojekyll
 # conectaa
